@@ -17,6 +17,7 @@
 #ifndef DNNL_H
 #define DNNL_H
 
+// Some changes to trigger codeowners test
 #include "oneapi/dnnl/dnnl.h"
 
 #endif /* DNNL_H */
