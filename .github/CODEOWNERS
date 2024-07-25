@@ -15,7 +15,7 @@
 #===============================================================================
 
 # Default
-* @intel-innersource/dnn-arch
+* @intel-innersource/dnn-arch @oneapi-src/onednn-maintain
 
 # Documentation
 *.md  @intel-innersource/dnn-doc @intel-innersource/dnn-mgmt @intel-innersource/dnn-arch
