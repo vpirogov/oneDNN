@@ -32,7 +32,7 @@ devops:
 # Documentation
 documentation:
 - changed-files:
-  - any-glob-to-any-file: ['**/*.md'. 'doc/**']
+  - any-glob-to-any-file: ['**/*.md', 'doc/**']
 
 # CPU Engine
 platform:cpu-aarch64:
@@ -71,3 +71,11 @@ platform:gpu-nvidia:
 platform:gpu-generic:
 - changed-files:
   - any-glob-to-any-file: 'src/gpu/generic/**'
+
+# RFCs
+RFC:
+- base-branch: 'rfcs'
+
+# Backport
+backport:
+- base-branch: 'rls-*'
