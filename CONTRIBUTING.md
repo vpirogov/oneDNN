@@ -87,7 +87,7 @@ All code in oneDNN gets promoted to product branches (`master`, `rls-`, and
 To simplify the work of reviewers, make sure that the commits in the pull
 request adhere to the following requirements:
 
-- Commit message should be fit into 50 (at most 72) characters and have the
+- First line of commit message should be fit into 100 characters and have the
   imperative mood.
 - Commit message should follow the format:
   `<scope>:[scope: ..] <short description>`

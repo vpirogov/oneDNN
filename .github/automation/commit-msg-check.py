@@ -48,14 +48,15 @@ def __scopeCheck(msg: str):
 
 # * Ensuring a character limit for the first line.
 def __numCharacterCheck(msg: str):
+    MAX_LEN = 100
     status = "Message length:"
     summary = msg.partition("\n")[0]
     msgSummaryLen = len(summary)
-    if msgSummaryLen <= 72:
+    if msgSummaryLen <= MAX_LEN:
         print(f"{status} OK")
         return True
     else:
-        print(f"{status} FAILED: Commit message summary must not exceed 72 characters.")
+        print(f"{status} FAILED: Commit message summary must not exceed {MAX_LEN} characters.")
         return False
 
 def main():
