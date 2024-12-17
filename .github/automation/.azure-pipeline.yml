@@ -17,8 +17,19 @@
 #===============================================================================
 
 trigger:
-- main
-- rls-*
+  branches:
+    include: [ main, rls-* ]
+  paths:
+    include:
+      - .github
+      - cmake
+      - examples
+      - include
+      - src
+      - tests
+    exclude:
+      - src/gpu
+      - src/cpu/aarch64
 
 jobs:
   - job: 'Ubuntu20'
