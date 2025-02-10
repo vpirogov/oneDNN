@@ -18,6 +18,7 @@
 # *******************************************************************************
 
 # Build oneDNN for aarch64.
+# Test change to trigger AArch64 CI
 
 set -o errexit -o pipefail -o noclobber
 
