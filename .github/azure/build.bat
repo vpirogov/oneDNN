@@ -28,10 +28,9 @@ SHIFT
 SHIFT
 IF NOT "%1" == "" GOTO process_arguments
 
-vcpkg integrate install
 vcpkg fetch ninja
 
-SET "CMAKE_OPTIONS=-G Ninja -DCMAKE_BUILD_TYPE=%MODE% -DDNNL_BUILD_FOR_CI=ON -DDNNL_WERROR=ON"
+SET "CMAKE_OPTIONS=-G Ninja -DCMAKE_MAKE_PROGRAM="C:\vcpkg\downloads\tools\ninja-1.12.1-windows\ninja.exe" -DCMAKE_BUILD_TYPE=%MODE% -DDNNL_BUILD_FOR_CI=ON -DDNNL_WERROR=ON"
 
 SET "CPU_RUNTIME=NONE"
 SET "GPU_RUNTIME=NONE"
