@@ -28,7 +28,8 @@ SHIFT
 SHIFT
 IF NOT "%1" == "" GOTO process_arguments
 
-vcpkg install vcpkg-tool-ninja
+vcpkg integrate install
+vcpkg fetch ninja
 
 SET "CMAKE_OPTIONS=-G Ninja -DCMAKE_BUILD_TYPE=%MODE% -DDNNL_BUILD_FOR_CI=ON -DDNNL_WERROR=ON"
 
