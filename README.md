@@ -1,5 +1,11 @@
 [![UXL Foundation Logo](https://github.com/uxlfoundation/artwork/blob/main/foundation/uxl-foundation-logo-horizontal-color.png)][UXL Foundation]
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/uxlfoundation/artwork/blob/main/foundation/uxl-foundation-logo-horizontal-white.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://github.com/uxlfoundation/artwork/blob/main/foundation/uxl-foundation-logo-horizontal-black.png">
+  <img alt="UXL Foundation Logo" src="https://github.com/uxlfoundation/artwork/blob/main/foundation/uxl-foundation-logo-horizontal-color.png">
+</picture>
+
 oneAPI Deep Neural Network Library (oneDNN)
 ===========================================
 
