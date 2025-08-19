@@ -9,7 +9,6 @@ Memory
 
 	enum_dnnl_format_kind_t.rst
 	enum_dnnl_format_tag_t.rst
-	enum_dnnl_profiling_data_kind_t.rst
 	enum_dnnl_sparse_encoding_t.rst
 	struct_dnnl_memory.rst
 	struct_dnnl_memory_desc.rst
@@ -36,7 +35,6 @@ A container that describes and stores data. :ref:`More...<details-group__dnnl__a
 
 	enum :ref:`dnnl_format_kind_t<doxid-group__dnnl__api__memory_1gaa75cad747fa467d9dc527d943ba3367d>`;
 	enum :ref:`dnnl_format_tag_t<doxid-group__dnnl__api__memory_1ga395e42b594683adb25ed2d842bb3091d>`;
-	enum :ref:`dnnl_profiling_data_kind_t<doxid-group__dnnl__api__memory_1ga7ac0b200fe8227f70d08832ffc9c51f4>`;
 	enum :ref:`dnnl_sparse_encoding_t<doxid-group__dnnl__api__memory_1gad5c084dc8593f175172318438996b552>`;
 
 	// structs

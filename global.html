@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>Global Namespace &#8212; oneDNN v3.10.0 documentation</title>
   
@@ -48,6 +48,12 @@
     <script src="_static/scripts/sphinx-book-theme.js"></script>
     <script src="_static/target-highlight.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'global';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/oneDNN/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v3.10';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        </script>
     <link rel="icon" href="_static/favicons.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -532,10 +538,6 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_primitive_cache.html">Primitive Cache</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_profiling.html">Profiling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="enum_dnnl_profiling_data_kind.html">enum dnnl::profiling_data_kind</a></li>
-</ul>
-</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_blas.html">BLAS functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
@@ -585,7 +587,6 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="group_dnnl_api_memory.html">Memory</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_format_kind_t.html">enum dnnl_format_kind_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_format_tag_t.html">enum dnnl_format_tag_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="enum_dnnl_profiling_data_kind_t.html">enum dnnl_profiling_data_kind_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_sparse_encoding_t.html">enum dnnl_sparse_encoding_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="struct_dnnl_memory.html">struct dnnl_memory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="struct_dnnl_memory_desc.html">struct dnnl_memory_desc</a></li>
@@ -738,6 +739,30 @@
         <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
 </button></div>
+      
+        <div class="header-article-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
       
     </div>
   
@@ -1086,7 +1111,6 @@ document.write(`
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_ocl_interop_memory_kind_t.html#doxid-group-dnnl-api-ocl-interop-1ga410bffb44ad08e8d2628711e5ea16d16"><span class="std std-ref">dnnl_ocl_interop_memory_kind_t</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_pack_type_t.html#doxid-group-dnnl-api-ukernel-1gae3d5cfb974745e876830f87c3315ec97"><span class="std std-ref">dnnl_pack_type_t</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_primitive_kind_t.html#doxid-group-dnnl-api-primitives-common-1ga9878f4795e53ad8443e5c0a29e53286a"><span class="std std-ref">dnnl_primitive_kind_t</span></a><span></span><span class="p">;</span>
-<span class="k">enum</span> <a class="reference internal" href="enum_dnnl_profiling_data_kind_t.html#doxid-group-dnnl-api-memory-1ga7ac0b200fe8227f70d08832ffc9c51f4"><span class="std std-ref">dnnl_profiling_data_kind_t</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_prop_kind_t.html#doxid-group-dnnl-api-primitives-common-1gae3c1f22ae55645782923fbfd8b07d0c4"><span class="std std-ref">dnnl_prop_kind_t</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_query_t.html#doxid-group-dnnl-api-primitives-common-1ga9e5235563cf7cfc10fa89f415de98059"><span class="std std-ref">dnnl_query_t</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_rnn_direction_t.html#doxid-group-dnnl-api-rnn-1ga629de1827647bf1824361a276c5169f0"><span class="std std-ref">dnnl_rnn_direction_t</span></a><span></span><span class="p">;</span>
@@ -3119,14 +3143,6 @@ document.write(`
 <a class="reference internal" href="enum_dnnl_cpu_isa_t.html#doxid-group-dnnl-api-service-1ga303bab5d2e7b371bb44495864df21dd2"><span class="std std-ref">dnnl_cpu_isa_t</span></a><span></span> <span class="n">DNNL_API</span> <a class="reference internal" href="group_dnnl_api_service.html#doxid-group-dnnl-api-service-1gac55836cf36bc25f8635e459678303570"><span class="std std-ref">dnnl_get_effective_cpu_isa</span></a><span></span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
 <a class="reference internal" href="enum_dnnl_status_t.html#doxid-group-dnnl-api-utils-1gad24f9ded06e34d3ee71e7fc4b408d57a"><span class="std std-ref">dnnl_status_t</span></a><span></span> <span class="n">DNNL_API</span> <a class="reference internal" href="group_dnnl_api_service.html#doxid-group-dnnl-api-service-1gad078a384ab0e078d81595686efd26ed2"><span class="std std-ref">dnnl_set_cpu_isa_hints</span></a><span></span><span class="p">(</span><a class="reference internal" href="enum_dnnl_cpu_isa_hints_t.html#doxid-group-dnnl-api-service-1gaf356412d94e35579bd509ed1fa174f5d"><span class="std std-ref">dnnl_cpu_isa_hints_t</span></a><span></span> <span class="n">isa_hints</span><span class="p">);</span>
 <a class="reference internal" href="enum_dnnl_cpu_isa_hints_t.html#doxid-group-dnnl-api-service-1gaf356412d94e35579bd509ed1fa174f5d"><span class="std std-ref">dnnl_cpu_isa_hints_t</span></a><span></span> <span class="n">DNNL_API</span> <a class="reference internal" href="group_dnnl_api_service.html#doxid-group-dnnl-api-service-1gad93f9f4bf3c9e12a2be7337b1e41d145"><span class="std std-ref">dnnl_get_cpu_isa_hints</span></a><span></span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<a class="reference internal" href="enum_dnnl_status_t.html#doxid-group-dnnl-api-utils-1gad24f9ded06e34d3ee71e7fc4b408d57a"><span class="std std-ref">dnnl_status_t</span></a><span></span> <span class="n">DNNL_API</span> <a class="reference internal" href="group_dnnl_api_profiling.html#doxid-group-dnnl-api-profiling-1gaaf7e8e00d675e7362ccf75b30a9c47bd"><span class="std std-ref">dnnl_reset_profiling</span></a><span></span><span class="p">(</span><a class="reference internal" href="group_dnnl_api_stream.html#doxid-group-dnnl-api-stream-1ga735eb19cfd205c108c468b5657de4eca"><span class="std std-ref">dnnl_stream_t</span></a><span></span> <span class="n">stream</span><span class="p">);</span>
-
-<a class="reference internal" href="enum_dnnl_status_t.html#doxid-group-dnnl-api-utils-1gad24f9ded06e34d3ee71e7fc4b408d57a"><span class="std std-ref">dnnl_status_t</span></a><span></span> <span class="n">DNNL_API</span> <a class="reference internal" href="group_dnnl_api_profiling.html#doxid-group-dnnl-api-profiling-1gae92506d856399892636be1c86a3a94a7"><span class="std std-ref">dnnl_query_profiling_data</span></a><span></span><span class="p">(</span>
-    <a class="reference internal" href="group_dnnl_api_stream.html#doxid-group-dnnl-api-stream-1ga735eb19cfd205c108c468b5657de4eca"><span class="std std-ref">dnnl_stream_t</span></a><span></span> <span class="n">stream</span><span class="p">,</span>
-    <a class="reference internal" href="enum_dnnl_profiling_data_kind_t.html#doxid-group-dnnl-api-memory-1ga7ac0b200fe8227f70d08832ffc9c51f4"><span class="std std-ref">dnnl_profiling_data_kind_t</span></a><span></span> <span class="n">data_kind</span><span class="p">,</span>
-    <span class="kt">int</span><span class="o">*</span> <span class="n">num_entries</span><span class="p">,</span>
-    <span class="kt">uint64_t</span><span class="o">*</span> <span class="n">data</span>
-    <span class="p">);</span>
 
 <a class="reference internal" href="enum_dnnl_status_t.html#doxid-group-dnnl-api-utils-1gad24f9ded06e34d3ee71e7fc4b408d57a"><span class="std std-ref">dnnl_status_t</span></a><span></span> <span class="n">DNNL_API</span> <a class="reference internal" href="group_dnnl_api_blas.html#doxid-group-dnnl-api-blas-1ga75ee119765bdac249200fda42c0617f8"><span class="std std-ref">dnnl_sgemm</span></a><span></span><span class="p">(</span>
     <span class="kt">char</span> <span class="n">transa</span><span class="p">,</span>

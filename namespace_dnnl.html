@@ -7,7 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
     <title>namespace dnnl &#8212; oneDNN v3.10.0 documentation</title>
   
@@ -48,6 +48,12 @@
     <script src="_static/scripts/sphinx-book-theme.js"></script>
     <script src="_static/target-highlight.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'namespace_dnnl';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/oneDNN/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v3.10';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        </script>
     <link rel="icon" href="_static/favicons.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -534,10 +540,6 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_primitive_cache.html">Primitive Cache</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_profiling.html">Profiling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="enum_dnnl_profiling_data_kind.html">enum dnnl::profiling_data_kind</a></li>
-</ul>
-</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_blas.html">BLAS functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
@@ -587,7 +589,6 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="group_dnnl_api_memory.html">Memory</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_format_kind_t.html">enum dnnl_format_kind_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_format_tag_t.html">enum dnnl_format_tag_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="enum_dnnl_profiling_data_kind_t.html">enum dnnl_profiling_data_kind_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_sparse_encoding_t.html">enum dnnl_sparse_encoding_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="struct_dnnl_memory.html">struct dnnl_memory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="struct_dnnl_memory_desc.html">struct dnnl_memory_desc</a></li>
@@ -740,6 +741,30 @@
         <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
 </button></div>
+      
+        <div class="header-article-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
       
     </div>
   
@@ -934,7 +959,6 @@ document.write(`
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_cpu_isa_hints.html#doxid-group-dnnl-api-service-1gaf574021058ebc6965da14fc4387dd0c4"><span class="std std-ref">cpu_isa_hints</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_fpmath_mode.html#doxid-group-dnnl-api-fpmath-mode-1ga0ad94cbef13dce222933422bfdcfa725"><span class="std std-ref">fpmath_mode</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_normalization_flags.html#doxid-group-dnnl-api-primitives-common-1gad8ef0fcbb7b10cae3d67dd46892002be"><span class="std std-ref">normalization_flags</span></a><span></span><span class="p">;</span>
-<span class="k">enum</span> <a class="reference internal" href="enum_dnnl_profiling_data_kind.html#doxid-group-dnnl-api-profiling-1gab19f8c7379c446429c9a4b043d64b4aa"><span class="std std-ref">profiling_data_kind</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_prop_kind.html#doxid-group-dnnl-api-attributes-1gac7db48f6583aa9903e54c2a39d65438f"><span class="std std-ref">prop_kind</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_query.html#doxid-group-dnnl-api-primitives-common-1ga94efdd650364f4d9776cfb9b711cbdc1"><span class="std std-ref">query</span></a><span></span><span class="p">;</span>
 <span class="k">enum</span> <a class="reference internal" href="enum_dnnl_rnn_direction.html#doxid-group-dnnl-api-rnn-1ga33315cf335d1cbe26fd6b70d956e23d5"><span class="std std-ref">rnn_direction</span></a><span></span><span class="p">;</span>
@@ -1040,13 +1064,6 @@ document.write(`
 <a class="reference internal" href="enum_dnnl_cpu_isa.html#doxid-group-dnnl-api-service-1gabad017feb1850634bf3babdb68234f83"><span class="std std-ref">cpu_isa</span></a><span></span> <a class="reference internal" href="group_dnnl_api_service.html#doxid-group-dnnl-api-service-1ga3953f71c3f0126d9cc005a1ceff65e8b"><span class="std std-ref">get_effective_cpu_isa</span></a><span></span><span class="p">();</span>
 <a class="reference internal" href="enum_dnnl_status.html#doxid-group-dnnl-api-service-1ga7acc4d3516304ae68a1289551d8f2cdd"><span class="std std-ref">status</span></a><span></span> <a class="reference internal" href="group_dnnl_api_service.html#doxid-group-dnnl-api-service-1ga29aa5fb708d803e091ac61dc67f9e6ed"><span class="std std-ref">set_cpu_isa_hints</span></a><span></span><span class="p">(</span><a class="reference internal" href="enum_dnnl_cpu_isa_hints.html#doxid-group-dnnl-api-service-1gaf574021058ebc6965da14fc4387dd0c4"><span class="std std-ref">cpu_isa_hints</span></a><span></span> <span class="n">isa_hints</span><span class="p">);</span>
 <a class="reference internal" href="enum_dnnl_cpu_isa_hints.html#doxid-group-dnnl-api-service-1gaf574021058ebc6965da14fc4387dd0c4"><span class="std std-ref">cpu_isa_hints</span></a><span></span> <a class="reference internal" href="group_dnnl_api_service.html#doxid-group-dnnl-api-service-1ga8bee13aa79a9711489b401e9c4252ff2"><span class="std std-ref">get_cpu_isa_hints</span></a><span></span><span class="p">();</span>
-<span class="kt">void</span> <a class="reference internal" href="group_dnnl_api_profiling.html#doxid-group-dnnl-api-profiling-1ga1d9547121faf3f10c23989c3ef05bc1e"><span class="std std-ref">reset_profiling</span></a><span></span><span class="p">(</span><a class="reference internal" href="struct_dnnl_stream-2.html#doxid-structdnnl-1-1stream"><span class="std std-ref">stream</span></a><span></span><span class="o">&amp;</span> <span class="n">stream</span><span class="p">);</span>
-
-<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">uint64_t</span><span class="o">&gt;</span> <a class="reference internal" href="group_dnnl_api_profiling.html#doxid-group-dnnl-api-profiling-1ga0dc451b94cbeacb7a5e0c73c3071ee4e"><span class="std std-ref">get_profiling_data</span></a><span></span><span class="p">(</span>
-    <a class="reference internal" href="struct_dnnl_stream-2.html#doxid-structdnnl-1-1stream"><span class="std std-ref">stream</span></a><span></span><span class="o">&amp;</span> <span class="n">stream</span><span class="p">,</span>
-    <a class="reference internal" href="enum_dnnl_profiling_data_kind.html#doxid-group-dnnl-api-profiling-1gab19f8c7379c446429c9a4b043d64b4aa"><span class="std std-ref">profiling_data_kind</span></a><span></span> <span class="n">data_kind</span>
-    <span class="p">);</span>
-
 <span class="kt">int</span> <a class="reference internal" href="group_dnnl_api_primitive_cache.html#doxid-group-dnnl-api-primitive-cache-1gacc0f23351595504f3e2c2b6fcf603770"><span class="std std-ref">get_primitive_cache_capacity</span></a><span></span><span class="p">();</span>
 <span class="kt">void</span> <a class="reference internal" href="group_dnnl_api_primitive_cache.html#doxid-group-dnnl-api-primitive-cache-1ga12eefad64ac6917a161994c005abe69c"><span class="std std-ref">set_primitive_cache_capacity</span></a><span></span><span class="p">(</span><span class="kt">int</span> <span class="n">capacity</span><span class="p">);</span>
 

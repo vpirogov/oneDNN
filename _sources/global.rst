@@ -194,7 +194,6 @@ Overview
 	enum :ref:`dnnl_ocl_interop_memory_kind_t<doxid-group__dnnl__api__ocl__interop_1ga410bffb44ad08e8d2628711e5ea16d16>`;
 	enum :ref:`dnnl_pack_type_t<doxid-group__dnnl__api__ukernel_1gae3d5cfb974745e876830f87c3315ec97>`;
 	enum :ref:`dnnl_primitive_kind_t<doxid-group__dnnl__api__primitives__common_1ga9878f4795e53ad8443e5c0a29e53286a>`;
-	enum :ref:`dnnl_profiling_data_kind_t<doxid-group__dnnl__api__memory_1ga7ac0b200fe8227f70d08832ffc9c51f4>`;
 	enum :ref:`dnnl_prop_kind_t<doxid-group__dnnl__api__primitives__common_1gae3c1f22ae55645782923fbfd8b07d0c4>`;
 	enum :ref:`dnnl_query_t<doxid-group__dnnl__api__primitives__common_1ga9e5235563cf7cfc10fa89f415de98059>`;
 	enum :ref:`dnnl_rnn_direction_t<doxid-group__dnnl__api__rnn_1ga629de1827647bf1824361a276c5169f0>`;
@@ -2227,14 +2226,6 @@ Overview
 	:ref:`dnnl_cpu_isa_t<doxid-group__dnnl__api__service_1ga303bab5d2e7b371bb44495864df21dd2>` DNNL_API :ref:`dnnl_get_effective_cpu_isa<doxid-group__dnnl__api__service_1gac55836cf36bc25f8635e459678303570>`(void);
 	:ref:`dnnl_status_t<doxid-group__dnnl__api__utils_1gad24f9ded06e34d3ee71e7fc4b408d57a>` DNNL_API :ref:`dnnl_set_cpu_isa_hints<doxid-group__dnnl__api__service_1gad078a384ab0e078d81595686efd26ed2>`(:ref:`dnnl_cpu_isa_hints_t<doxid-group__dnnl__api__service_1gaf356412d94e35579bd509ed1fa174f5d>` isa_hints);
 	:ref:`dnnl_cpu_isa_hints_t<doxid-group__dnnl__api__service_1gaf356412d94e35579bd509ed1fa174f5d>` DNNL_API :ref:`dnnl_get_cpu_isa_hints<doxid-group__dnnl__api__service_1gad93f9f4bf3c9e12a2be7337b1e41d145>`(void);
-	:ref:`dnnl_status_t<doxid-group__dnnl__api__utils_1gad24f9ded06e34d3ee71e7fc4b408d57a>` DNNL_API :ref:`dnnl_reset_profiling<doxid-group__dnnl__api__profiling_1gaaf7e8e00d675e7362ccf75b30a9c47bd>`(:ref:`dnnl_stream_t<doxid-group__dnnl__api__stream_1ga735eb19cfd205c108c468b5657de4eca>` stream);
-
-	:ref:`dnnl_status_t<doxid-group__dnnl__api__utils_1gad24f9ded06e34d3ee71e7fc4b408d57a>` DNNL_API :ref:`dnnl_query_profiling_data<doxid-group__dnnl__api__profiling_1gae92506d856399892636be1c86a3a94a7>`(
-		:ref:`dnnl_stream_t<doxid-group__dnnl__api__stream_1ga735eb19cfd205c108c468b5657de4eca>` stream,
-		:ref:`dnnl_profiling_data_kind_t<doxid-group__dnnl__api__memory_1ga7ac0b200fe8227f70d08832ffc9c51f4>` data_kind,
-		int* num_entries,
-		uint64_t* data
-		);
 
 	:ref:`dnnl_status_t<doxid-group__dnnl__api__utils_1gad24f9ded06e34d3ee71e7fc4b408d57a>` DNNL_API :ref:`dnnl_sgemm<doxid-group__dnnl__api__blas_1ga75ee119765bdac249200fda42c0617f8>`(
 		char transa,

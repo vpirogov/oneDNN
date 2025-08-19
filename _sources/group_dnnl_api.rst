@@ -9,7 +9,6 @@ oneDNN API
 
 	group_dnnl_api_primitives.rst
 	group_dnnl_api_primitive_cache.rst
-	group_dnnl_api_profiling.rst
 	group_dnnl_api_blas.rst
 	group_dnnl_api_common.rst
 	group_dnnl_graph_api.rst
@@ -44,7 +43,6 @@ oneDNN API
 |		:ref:`Resampling<doxid-group__dnnl__api__resampling>`
 |		:ref:`Reduction<doxid-group__dnnl__api__reduction>`
 |	:ref:`Primitive Cache<doxid-group__dnnl__api__primitive__cache>`
-|	:ref:`Profiling<doxid-group__dnnl__api__profiling>`
 |	:ref:`BLAS functions<doxid-group__dnnl__api__blas>`
 |	:ref:`Common API<doxid-group__dnnl__api__common>`
 |		:ref:`Engine<doxid-group__dnnl__api__engine>`

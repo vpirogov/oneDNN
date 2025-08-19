@@ -47,6 +47,12 @@
     <script src="_static/scripts/sphinx-book-theme.js"></script>
     <script src="_static/target-highlight.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
+    <script>
+        DOCUMENTATION_OPTIONS.theme_version = '0.15.4';
+        DOCUMENTATION_OPTIONS.theme_switcher_json_url = '/oneDNN/versions.json';
+        DOCUMENTATION_OPTIONS.theme_switcher_version_match = 'v3.10';
+        DOCUMENTATION_OPTIONS.show_version_warning_banner = false;
+        </script>
     <link rel="icon" href="_static/favicons.png"/>
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
@@ -533,10 +539,6 @@
 <li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_primitive_cache.html">Primitive Cache</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_profiling.html">Profiling</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="enum_dnnl_profiling_data_kind.html">enum dnnl::profiling_data_kind</a></li>
-</ul>
-</details></li>
 <li class="toctree-l2 has-children"><a class="reference internal" href="group_dnnl_api_blas.html">BLAS functions</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="simple">
 </ul>
 </details></li>
@@ -586,7 +588,6 @@
 <li class="toctree-l3 has-children"><a class="reference internal" href="group_dnnl_api_memory.html">Memory</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_format_kind_t.html">enum dnnl_format_kind_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_format_tag_t.html">enum dnnl_format_tag_t</a></li>
-<li class="toctree-l4"><a class="reference internal" href="enum_dnnl_profiling_data_kind_t.html">enum dnnl_profiling_data_kind_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="enum_dnnl_sparse_encoding_t.html">enum dnnl_sparse_encoding_t</a></li>
 <li class="toctree-l4"><a class="reference internal" href="struct_dnnl_memory.html">struct dnnl_memory</a></li>
 <li class="toctree-l4"><a class="reference internal" href="struct_dnnl_memory_desc.html">struct dnnl_memory_desc</a></li>
@@ -739,6 +740,30 @@
         <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
   <span class="fa-solid fa-bars"></span>
 </button></div>
+      
+        <div class="header-article-item">
+<script>
+document.write(`
+  <div class="version-switcher__container dropdown">
+    <button id="pst-version-switcher-button-2"
+      type="button"
+      class="version-switcher__button btn btn-sm dropdown-toggle"
+      data-bs-toggle="dropdown"
+      aria-haspopup="listbox"
+      aria-controls="pst-version-switcher-list-2"
+      aria-label="Version switcher list"
+    >
+      Choose version  <!-- this text may get changed later by javascript -->
+      <span class="caret"></span>
+    </button>
+    <div id="pst-version-switcher-list-2"
+      class="version-switcher__menu dropdown-menu list-group-flush py-0"
+      role="listbox" aria-labelledby="pst-version-switcher-button-2">
+      <!-- dropdown will be populated by javascript on page load -->
+    </div>
+  </div>
+`);
+</script></div>
       
     </div>
   
@@ -6453,6 +6478,8 @@ document.write(`
         <li><a href="group_dnnl_graph_api_graph.html#index-8">function</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     dnnl_graph_allocator_create
 
@@ -6474,8 +6501,6 @@ document.write(`
         <li><a href="group_dnnl_graph_api_allocator.html#index-3">typedef</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     dnnl_graph_compiled_partition_create
 
@@ -9025,27 +9050,6 @@ document.write(`
 </li>
       </ul></li>
       <li>
-    dnnl_profiling_data_kind_t
-
-      <ul>
-        <li><a href="enum_dnnl_profiling_data_kind_t.html#index-0">enum</a>
-</li>
-      </ul></li>
-      <li>
-    dnnl_profiling_data_kind_time
-
-      <ul>
-        <li><a href="enum_dnnl_profiling_data_kind_t.html#index-2">enumvalue</a>
-</li>
-      </ul></li>
-      <li>
-    dnnl_profiling_data_kind_undef
-
-      <ul>
-        <li><a href="enum_dnnl_profiling_data_kind_t.html#index-1">enumvalue</a>
-</li>
-      </ul></li>
-      <li>
     dnnl_prop_kind_t
 
       <ul>
@@ -9354,13 +9358,6 @@ document.write(`
 </li>
       </ul></li>
       <li>
-    dnnl_query_profiling_data
-
-      <ul>
-        <li><a href="group_dnnl_api_profiling.html#index-4">function</a>
-</li>
-      </ul></li>
-      <li>
     dnnl_query_prop_kind
 
       <ul>
@@ -9589,13 +9586,6 @@ document.write(`
 
       <ul>
         <li><a href="enum_dnnl_alg_kind_t.html#index-58">enumvalue</a>
-</li>
-      </ul></li>
-      <li>
-    dnnl_reset_profiling
-
-      <ul>
-        <li><a href="group_dnnl_api_profiling.html#index-3">function</a>
 </li>
       </ul></li>
       <li>
@@ -10782,8 +10772,6 @@ document.write(`
 </li>
         <li><a href="enum_dnnl_primitive_kind_t.html#index-0">dnnl_primitive_kind_t</a>
 </li>
-        <li><a href="enum_dnnl_profiling_data_kind_t.html#index-0">dnnl_profiling_data_kind_t</a>
-</li>
         <li><a href="enum_dnnl_prop_kind_t.html#index-0">dnnl_prop_kind_t</a>
 </li>
         <li><a href="enum_dnnl_query_t.html#index-0">dnnl_query_t</a>
@@ -10823,8 +10811,6 @@ document.write(`
         <li><a href="enum_dnnl_ukernel_pack_type.html#index-0">pack_type</a>
 </li>
         <li><a href="enum_dnnl_graph_partition_policy.html#index-0">policy</a>
-</li>
-        <li><a href="enum_dnnl_profiling_data_kind.html#index-0">profiling_data_kind</a>
 </li>
         <li><a href="enum_dnnl_prop_kind.html#index-0">prop_kind</a>
 </li>
@@ -11771,10 +11757,6 @@ document.write(`
 </li>
         <li><a href="enum_dnnl_primitive_kind_t.html#index-19">dnnl_prelu</a>
 </li>
-        <li><a href="enum_dnnl_profiling_data_kind_t.html#index-2">dnnl_profiling_data_kind_time</a>
-</li>
-        <li><a href="enum_dnnl_profiling_data_kind_t.html#index-1">dnnl_profiling_data_kind_undef</a>
-</li>
         <li><a href="enum_dnnl_prop_kind_t.html#index-1">dnnl_prop_kind_undef</a>
 </li>
         <li><a href="enum_dnnl_query_t.html#index-31">dnnl_query_activation_kind</a>
@@ -12421,8 +12403,6 @@ document.write(`
 </li>
         <li><a href="enum_dnnl_fpmath_mode.html#index-4">tf32</a>
 </li>
-        <li><a href="enum_dnnl_profiling_data_kind.html#index-2">time</a>
-</li>
         <li><a href="enum_dnnl_query.html#index-6">time_estimate_f64</a>
 </li>
         <li><a href="enum_dnnl_memory_format_tag.html#index-50">tn</a>
@@ -12439,7 +12419,7 @@ document.write(`
 </li>
         <li><a href="enum_dnnl_graph_logical_tensor_data_type.html#index-6">u8</a>, <a href="enum_dnnl_memory_data_type.html#index-12">[1]</a>
 </li>
-        <li><a href="enum_dnnl_algorithm.html#index-1">undef</a>, <a href="enum_dnnl_graph_logical_tensor_layout_type.html#index-1">[1]</a>, <a href="enum_dnnl_graph_logical_tensor_property_type.html#index-1">[2]</a>, <a href="enum_dnnl_graph_op_attr.html#index-1">[3]</a>, <a href="enum_dnnl_memory_data_type.html#index-1">[4]</a>, <a href="enum_dnnl_memory_format_kind.html#index-1">[5]</a>, <a href="enum_dnnl_memory_format_tag.html#index-1">[6]</a>, <a href="enum_dnnl_memory_sparse_encoding.html#index-1">[7]</a>, <a href="enum_dnnl_primitive_kind.html#index-1">[8]</a>, <a href="enum_dnnl_profiling_data_kind.html#index-1">[9]</a>, <a href="enum_dnnl_prop_kind.html#index-1">[10]</a>, <a href="enum_dnnl_query.html#index-1">[11]</a>, <a href="enum_dnnl_rnn_direction.html#index-1">[12]</a>, <a href="enum_dnnl_rnn_flags.html#index-1">[13]</a>, <a href="enum_dnnl_ukernel_pack_type.html#index-1">[14]</a>
+        <li><a href="enum_dnnl_algorithm.html#index-1">undef</a>, <a href="enum_dnnl_graph_logical_tensor_layout_type.html#index-1">[1]</a>, <a href="enum_dnnl_graph_logical_tensor_property_type.html#index-1">[2]</a>, <a href="enum_dnnl_graph_op_attr.html#index-1">[3]</a>, <a href="enum_dnnl_memory_data_type.html#index-1">[4]</a>, <a href="enum_dnnl_memory_format_kind.html#index-1">[5]</a>, <a href="enum_dnnl_memory_format_tag.html#index-1">[6]</a>, <a href="enum_dnnl_memory_sparse_encoding.html#index-1">[7]</a>, <a href="enum_dnnl_primitive_kind.html#index-1">[8]</a>, <a href="enum_dnnl_prop_kind.html#index-1">[9]</a>, <a href="enum_dnnl_query.html#index-1">[10]</a>, <a href="enum_dnnl_rnn_direction.html#index-1">[11]</a>, <a href="enum_dnnl_rnn_flags.html#index-1">[12]</a>, <a href="enum_dnnl_ukernel_pack_type.html#index-1">[13]</a>
 </li>
         <li><a href="enum_dnnl_rnn_direction.html#index-2">unidirectional_left2right</a>
 </li>
@@ -13386,8 +13366,6 @@ document.write(`
 </li>
         <li><a href="group_dnnl_api_primitives_common.html#index-18">dnnl_primitive_get_primitive_desc</a>
 </li>
-        <li><a href="group_dnnl_api_profiling.html#index-4">dnnl_query_profiling_data</a>
-</li>
         <li><a href="group_dnnl_api_reduction.html#index-1">dnnl_reduction_primitive_desc_create</a>
 </li>
         <li><a href="group_dnnl_api_reorder.html#index-1">dnnl_reorder_primitive_desc_create</a>
@@ -13395,8 +13373,6 @@ document.write(`
         <li><a href="group_dnnl_api_resampling.html#index-2">dnnl_resampling_backward_primitive_desc_create</a>
 </li>
         <li><a href="group_dnnl_api_resampling.html#index-1">dnnl_resampling_forward_primitive_desc_create</a>
-</li>
-        <li><a href="group_dnnl_api_profiling.html#index-3">dnnl_reset_profiling</a>
 </li>
         <li><a href="group_dnnl_api_service.html#index-18">dnnl_set_cpu_isa_hints</a>
 </li>
@@ -13682,8 +13658,6 @@ document.write(`
 </li>
         <li><a href="struct_dnnl_primitive-2.html#index-6">get_primitive_desc</a>
 </li>
-        <li><a href="group_dnnl_api_profiling.html#index-2">get_profiling_data</a>
-</li>
         <li><a href="struct_dnnl_augru_backward_primitive_desc.html#index-22">get_prop_kind</a>, <a href="struct_dnnl_augru_forward_primitive_desc.html#index-14">[1]</a>, <a href="struct_dnnl_batch_normalization_backward_primitive_desc.html#index-13">[2]</a>, <a href="struct_dnnl_batch_normalization_forward_primitive_desc.html#index-10">[3]</a>, <a href="struct_dnnl_convolution_backward_data_primitive_desc.html#index-9">[4]</a>, <a href="struct_dnnl_convolution_backward_weights_primitive_desc.html#index-12">[5]</a>, <a href="struct_dnnl_convolution_forward_primitive_desc.html#index-12">[6]</a>, <a href="struct_dnnl_deconvolution_backward_data_primitive_desc.html#index-9">[7]</a>, <a href="struct_dnnl_deconvolution_backward_weights_primitive_desc.html#index-12">[8]</a>, <a href="struct_dnnl_deconvolution_forward_primitive_desc.html#index-12">[9]</a>, <a href="struct_dnnl_eltwise_backward_primitive_desc.html#index-10">[10]</a>, <a href="struct_dnnl_eltwise_forward_primitive_desc.html#index-9">[11]</a>, <a href="struct_dnnl_group_normalization_backward_primitive_desc.html#index-13">[12]</a>, <a href="struct_dnnl_group_normalization_forward_primitive_desc.html#index-10">[13]</a>, <a href="struct_dnnl_gru_backward_primitive_desc.html#index-20">[14]</a>, <a href="struct_dnnl_gru_forward_primitive_desc.html#index-13">[15]</a>, <a href="struct_dnnl_inner_product_backward_data_primitive_desc.html#index-7">[16]</a>, <a href="struct_dnnl_inner_product_backward_weights_primitive_desc.html#index-9">[17]</a>, <a href="struct_dnnl_inner_product_forward_primitive_desc.html#index-9">[18]</a>, <a href="struct_dnnl_layer_normalization_backward_primitive_desc.html#index-16">[19]</a>, <a href="struct_dnnl_layer_normalization_forward_primitive_desc.html#index-13">[20]</a>, <a href="struct_dnnl_lbr_augru_backward_primitive_desc.html#index-22">[21]</a>, <a href="struct_dnnl_lbr_augru_forward_primitive_desc.html#index-14">[22]</a>, <a href="struct_dnnl_lbr_gru_backward_primitive_desc.html#index-20">[23]</a>, <a href="struct_dnnl_lbr_gru_forward_primitive_desc.html#index-13">[24]</a>, <a href="struct_dnnl_lrn_backward_primitive_desc.html#index-8">[25]</a>, <a href="struct_dnnl_lrn_forward_primitive_desc.html#index-8">[26]</a>, <a href="struct_dnnl_lstm_backward_primitive_desc.html#index-30">[27]</a>, <a href="struct_dnnl_lstm_forward_primitive_desc.html#index-19">[28]</a>, <a href="struct_dnnl_pooling_backward_primitive_desc.html#index-8">[29]</a>, <a href="struct_dnnl_pooling_forward_primitive_desc.html#index-8">[30]</a>, <a href="struct_dnnl_prelu_backward_primitive_desc.html#index-7">[31]</a>, <a href="struct_dnnl_prelu_forward_primitive_desc.html#index-6">[32]</a>, <a href="struct_dnnl_primitive_desc_base.html#index-27">[33]</a>, <a href="struct_dnnl_shuffle_backward_primitive_desc.html#index-6">[34]</a>, <a href="struct_dnnl_shuffle_forward_primitive_desc.html#index-6">[35]</a>, <a href="struct_dnnl_softmax_backward_primitive_desc.html#index-8">[36]</a>, <a href="struct_dnnl_softmax_forward_primitive_desc.html#index-7">[37]</a>, <a href="struct_dnnl_vanilla_rnn_backward_primitive_desc.html#index-21">[38]</a>, <a href="struct_dnnl_vanilla_rnn_forward_primitive_desc.html#index-14">[39]</a>
 </li>
         <li><a href="class_dnnl_graph_logical_tensor.html#index-15">get_property_type</a>
@@ -13855,8 +13829,6 @@ document.write(`
         <li><a href="struct_dnnl_resampling_forward.html#index-1">resampling_forward</a>, <a href="struct_dnnl_resampling_forward.html#index-2">[1]</a>, <a href="struct_dnnl_resampling_forward.html#index-3">[2]</a>
 </li>
         <li><a href="struct_dnnl_handle.html#index-7">reset</a>
-</li>
-        <li><a href="group_dnnl_api_profiling.html#index-1">reset_profiling</a>
 </li>
         <li><a href="struct_dnnl_primitive_desc_base.html#index-51">reset_with_clone</a>
 </li>
@@ -14629,6 +14601,8 @@ document.write(`
         <li><a href="class_dnnl_graph_graph.html#index-8">function</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     get_post_ops
 
@@ -14636,8 +14610,6 @@ document.write(`
         <li><a href="struct_dnnl_primitive_attr-2.html#index-20">function</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     get_primitive_attr
 
@@ -14657,13 +14629,6 @@ document.write(`
 
       <ul>
         <li><a href="struct_dnnl_primitive-2.html#index-6">function</a>
-</li>
-      </ul></li>
-      <li>
-    get_profiling_data
-
-      <ul>
-        <li><a href="group_dnnl_api_profiling.html#index-2">function</a>
 </li>
       </ul></li>
       <li>
@@ -15021,8 +14986,6 @@ document.write(`
         <li><a href="group_dnnl_api_primitive_cache.html#index-0">Primitive Cache</a>
 </li>
         <li><a href="group_dnnl_api_primitives.html#index-0">Primitives</a>
-</li>
-        <li><a href="group_dnnl_api_profiling.html#index-0">Profiling</a>
 </li>
         <li><a href="group_dnnl_api_reduction.html#index-0">Reduction</a>
 </li>
@@ -16923,9 +16886,9 @@ document.write(`
 </li>
         <li><a href="dev_guide_graph_matmul_fusion_patterns.html#index-0">MatMul Fusion Patterns</a>
 </li>
-        <li><a href="page_cpu_matmul_weights_compression_cpp.html#index-0">MatMul Primitive Example</a>
-</li>
         <li><a href="page_matmul_example_cpp.html#index-0">Matmul Primitive Example</a>
+</li>
+        <li><a href="page_cpu_matmul_weights_compression_cpp.html#index-0">MatMul Primitive Example</a>
 </li>
         <li><a href="page_cpu_matmul_coo_cpp.html#index-0">MatMul Primitive with Sparse Memory in COO Format</a>
 </li>
@@ -17479,13 +17442,6 @@ document.write(`
 </li>
       </ul></li>
       <li>
-    Profiling
-
-      <ul>
-        <li><a href="group_dnnl_api_profiling.html#index-0">group</a>
-</li>
-      </ul></li>
-      <li>
     Profiling oneDNN Performance
 
       <ul>
@@ -17497,13 +17453,6 @@ document.write(`
 
       <ul>
         <li><a href="dev_guide_vtune.html#index-0">page</a>
-</li>
-      </ul></li>
-      <li>
-    profiling_data_kind
-
-      <ul>
-        <li><a href="enum_dnnl_profiling_data_kind.html#index-0">enum</a>
 </li>
       </ul></li>
       <li>
@@ -17845,6 +17794,8 @@ document.write(`
         <li><a href="page_cross_engine_reorder_c.html#index-0">page</a>, <a href="page_cross_engine_reorder_cpp.html#index-0">[1]</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     Reorder Primitive Example
 
@@ -17852,8 +17803,6 @@ document.write(`
         <li><a href="page_reorder_example_cpp.html#index-0">page</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     reorder.cpp
 
@@ -17938,13 +17887,6 @@ document.write(`
 
       <ul>
         <li><a href="struct_dnnl_handle.html#index-7">function</a>
-</li>
-      </ul></li>
-      <li>
-    reset_profiling
-
-      <ul>
-        <li><a href="group_dnnl_api_profiling.html#index-1">function</a>
 </li>
       </ul></li>
       <li>
@@ -19268,13 +19210,6 @@ document.write(`
 </li>
       </ul></li>
       <li>
-    time
-
-      <ul>
-        <li><a href="enum_dnnl_profiling_data_kind.html#index-2">enumvalue</a>
-</li>
-      </ul></li>
-      <li>
     time_estimate_f64
 
       <ul>
@@ -19489,7 +19424,7 @@ document.write(`
     undef
 
       <ul>
-        <li><a href="enum_dnnl_algorithm.html#index-1">enumvalue</a>, <a href="enum_dnnl_graph_logical_tensor_layout_type.html#index-1">[1]</a>, <a href="enum_dnnl_graph_logical_tensor_property_type.html#index-1">[2]</a>, <a href="enum_dnnl_graph_op_attr.html#index-1">[3]</a>, <a href="enum_dnnl_memory_data_type.html#index-1">[4]</a>, <a href="enum_dnnl_memory_format_kind.html#index-1">[5]</a>, <a href="enum_dnnl_memory_format_tag.html#index-1">[6]</a>, <a href="enum_dnnl_memory_sparse_encoding.html#index-1">[7]</a>, <a href="enum_dnnl_primitive_kind.html#index-1">[8]</a>, <a href="enum_dnnl_profiling_data_kind.html#index-1">[9]</a>, <a href="enum_dnnl_prop_kind.html#index-1">[10]</a>, <a href="enum_dnnl_query.html#index-1">[11]</a>, <a href="enum_dnnl_rnn_direction.html#index-1">[12]</a>, <a href="enum_dnnl_rnn_flags.html#index-1">[13]</a>, <a href="enum_dnnl_ukernel_pack_type.html#index-1">[14]</a>
+        <li><a href="enum_dnnl_algorithm.html#index-1">enumvalue</a>, <a href="enum_dnnl_graph_logical_tensor_layout_type.html#index-1">[1]</a>, <a href="enum_dnnl_graph_logical_tensor_property_type.html#index-1">[2]</a>, <a href="enum_dnnl_graph_op_attr.html#index-1">[3]</a>, <a href="enum_dnnl_memory_data_type.html#index-1">[4]</a>, <a href="enum_dnnl_memory_format_kind.html#index-1">[5]</a>, <a href="enum_dnnl_memory_format_tag.html#index-1">[6]</a>, <a href="enum_dnnl_memory_sparse_encoding.html#index-1">[7]</a>, <a href="enum_dnnl_primitive_kind.html#index-1">[8]</a>, <a href="enum_dnnl_prop_kind.html#index-1">[9]</a>, <a href="enum_dnnl_query.html#index-1">[10]</a>, <a href="enum_dnnl_rnn_direction.html#index-1">[11]</a>, <a href="enum_dnnl_rnn_flags.html#index-1">[12]</a>, <a href="enum_dnnl_ukernel_pack_type.html#index-1">[13]</a>
 </li>
       </ul></li>
       <li>

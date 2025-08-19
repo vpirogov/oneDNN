@@ -71,7 +71,7 @@ Below is a pseudo-code that demonstrates the profiling API usage with a user-pro
 	:ref:`dnnl::stream <doxid-structdnnl_1_1stream>` stream = ocl_interop::make_stream(engine, ocl_queue);
 	// Create a convolution primitive ... //
 	// Reset profiler's state.
-	:ref:`dnnl::reset_profiling <doxid-group__dnnl__api__profiling_1ga1d9547121faf3f10c23989c3ef05bc1e>`(stream);
+	dnnl::reset_profiling(stream);
 	// Enqueue same primitive twice and wait for both executions to complete.
 	conv_prim.execute(stream, ...)
 	conv_prim.execute(stream, ...)
@@ -79,10 +79,10 @@ Below is a pseudo-code that demonstrates the profiling API usage with a user-pro
 	// Query profiling data. The vector size will be equal to the number of
 	// executions happened on the stream since the last `dnnl::reset_profiling`
 	// call.
-	std::vector<uint64_t> nsecs = :ref:`dnnl::get_profiling_data <doxid-group__dnnl__api__profiling_1ga0dc451b94cbeacb7a5e0c73c3071ee4e>`(stream, profiling_data_kind::time);
+	std::vector<uint64_t> nsecs = dnnl::get_profiling_data(stream, profiling_data_kind::time);
 	assert(nsecs.size() == 2);
 	// Reset profiler's state.
-	:ref:`dnnl::reset_profiling <doxid-group__dnnl__api__profiling_1ga1d9547121faf3f10c23989c3ef05bc1e>`(stream);
+	dnnl::reset_profiling(stream);
 
 .. warning:: 
 

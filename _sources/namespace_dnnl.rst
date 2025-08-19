@@ -38,7 +38,6 @@ oneDNN namespace
 	enum :ref:`cpu_isa_hints<doxid-group__dnnl__api__service_1gaf574021058ebc6965da14fc4387dd0c4>`;
 	enum :ref:`fpmath_mode<doxid-group__dnnl__api__fpmath__mode_1ga0ad94cbef13dce222933422bfdcfa725>`;
 	enum :ref:`normalization_flags<doxid-group__dnnl__api__primitives__common_1gad8ef0fcbb7b10cae3d67dd46892002be>`;
-	enum :ref:`profiling_data_kind<doxid-group__dnnl__api__profiling_1gab19f8c7379c446429c9a4b043d64b4aa>`;
 	enum :ref:`prop_kind<doxid-group__dnnl__api__attributes_1gac7db48f6583aa9903e54c2a39d65438f>`;
 	enum :ref:`query<doxid-group__dnnl__api__primitives__common_1ga94efdd650364f4d9776cfb9b711cbdc1>`;
 	enum :ref:`rnn_direction<doxid-group__dnnl__api__rnn_1ga33315cf335d1cbe26fd6b70d956e23d5>`;
@@ -144,13 +143,6 @@ oneDNN namespace
 	:ref:`cpu_isa<doxid-group__dnnl__api__service_1gabad017feb1850634bf3babdb68234f83>` :ref:`get_effective_cpu_isa<doxid-group__dnnl__api__service_1ga3953f71c3f0126d9cc005a1ceff65e8b>`();
 	:ref:`status<doxid-group__dnnl__api__service_1ga7acc4d3516304ae68a1289551d8f2cdd>` :ref:`set_cpu_isa_hints<doxid-group__dnnl__api__service_1ga29aa5fb708d803e091ac61dc67f9e6ed>`(:ref:`cpu_isa_hints<doxid-group__dnnl__api__service_1gaf574021058ebc6965da14fc4387dd0c4>` isa_hints);
 	:ref:`cpu_isa_hints<doxid-group__dnnl__api__service_1gaf574021058ebc6965da14fc4387dd0c4>` :ref:`get_cpu_isa_hints<doxid-group__dnnl__api__service_1ga8bee13aa79a9711489b401e9c4252ff2>`();
-	void :ref:`reset_profiling<doxid-group__dnnl__api__profiling_1ga1d9547121faf3f10c23989c3ef05bc1e>`(:ref:`stream<doxid-structdnnl_1_1stream>`& stream);
-
-	std::vector<uint64_t> :ref:`get_profiling_data<doxid-group__dnnl__api__profiling_1ga0dc451b94cbeacb7a5e0c73c3071ee4e>`(
-		:ref:`stream<doxid-structdnnl_1_1stream>`& stream,
-		:ref:`profiling_data_kind<doxid-group__dnnl__api__profiling_1gab19f8c7379c446429c9a4b043d64b4aa>` data_kind
-		);
-
 	int :ref:`get_primitive_cache_capacity<doxid-group__dnnl__api__primitive__cache_1gacc0f23351595504f3e2c2b6fcf603770>`();
 	void :ref:`set_primitive_cache_capacity<doxid-group__dnnl__api__primitive__cache_1ga12eefad64ac6917a161994c005abe69c>`(int capacity);
 
