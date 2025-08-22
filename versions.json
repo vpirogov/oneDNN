@@ -1,5 +1,15 @@
 [
   {
+    "name": "v3.6",
+    "version": "v3.6",
+    "url": "/oneDNN/v3.6/"
+  },
+  {
+    "name": "v3.5",
+    "version": "v3.5",
+    "url": "/oneDNN/v3.5/"
+  },
+  {
     "name": "v3.10 (dev)",
     "version": "v3.10",
     "url": "/oneDNN/"
@@ -18,15 +28,5 @@
     "name": "v3.7",
     "version": "v3.7",
     "url": "/oneDNN/v3.7/"
-  },
-  {
-    "name": "v3.6",
-    "version": "v3.6",
-    "url": "/oneDNN/v3.6/"
-  },
-  {
-    "name": "v3.5",
-    "version": "v3.5",
-    "url": "/oneDNN/v3.5/"
   }
 ]
