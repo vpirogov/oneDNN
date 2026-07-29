@@ -97,10 +97,10 @@ jobs:
           .github/azure/test.sh --build-dir $(pwd)/build --report-dir $(pwd)/report
         displayName: 'test'
         failOnStderr: true
-  - job: 'Windows_Server_2022'
+  - job: 'Windows_Server_2025'
     timeoutInMinutes: 120
     pool:
-      vmImage: 'windows-2022'
+      vmImage: 'windows-2025'
     steps:
       - script: |
           .github\azure\build.bat /THREADING omp /MODE Release /VSVERSION vs2022 /SOURCEDIR %CD% /BUILDDIR %CD%\build
