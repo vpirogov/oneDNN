@@ -29,14 +29,6 @@ log_manager_t::log_manager_t()
     // enables logging as well as printing to stdout
     , console_flag_(getenv_int_user("VERBOSE_LOG_WITH_CONSOLE", 0)) {
 
-    // logging is automatically disabled when no filepath is provided by
-    // DNNL_VERBOSE_LOGFILE
-    // in this case, we fall back to printing to stdout
-    if (logfile_path_.empty()) {
-        console_flag_ = true;
-        return;
-    }
-
     // additional run-time controls for logger creation
     if (getenv_int_user("VERBOSE_LOGFILE_SIZE") > 0)
         logfile_size_ = getenv_int_user("VERBOSE_LOGFILE_SIZE");
