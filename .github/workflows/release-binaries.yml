@@ -50,7 +50,7 @@ jobs:
   prepare:
     name: Prepare
     # Skip releases published in forks, but allow manual runs there.
-    if: github.repository == 'uxlfoundation/oneDNN' || github.event_name == 'workflow_dispatch'
+    if: github.repository == 'vpirogov/oneDNN' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-24.04
     outputs:
       tag: ${{ steps.tag.outputs.tag }}
